@@ -16,5 +16,17 @@ namespace InterfaceTest
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Treug tr = new Treug();
+            label1.Text = "Периметр: " + Convert.ToString(tr.Perimetr());
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Kvadrat kv = new Kvadrat();
+            label2.Text = "Периметр: " + Convert.ToString(kv.Perimetr());
+        }
     }
 }
